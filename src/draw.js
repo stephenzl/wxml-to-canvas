@@ -83,8 +83,8 @@ class Draw {
       };
 
       const isTempFile = /^wxfile:\/\//.test(img);
-      const isLocalFile = /^\//.test(img);
       const isNetworkFile = /^https?:\/\//.test(img);
+      const isLocalFile = /^\//.test(img);
 
       if (isTempFile || isLocalFile) {
         _drawImage(img);
